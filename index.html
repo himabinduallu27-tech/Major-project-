@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Portal</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f5f7fa;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0f172a;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:30px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00c853;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1600");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+max-width:800px;
+margin:auto;
+line-height:1.7;
+}
+
+.btn{
+margin-top:30px;
+padding:18px 40px;
+background:#00c853;
+border:none;
+color:white;
+font-size:20px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:80px 20px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:30px;
+width:250px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.card h2{
+font-size:45px;
+color:#1e3c72;
+}
+
+.features{
+padding:80px 8%;
+background:white;
+text-align:center;
+}
+
+.features h2{
+margin-bottom:40px;
+font-size:40px;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature{
+background:#f8f8f8;
+padding:25px;
+border-radius:12px;
+}
+
+footer{
+background:#111;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Exam Portal</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="register.html">Tests</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Online Examination Portal</h1>
+
+<p>
+Professional online testing platform with GK examinations,
+timed assessments, instant scoring and performance analysis.
+</p>
+
+<button class="btn"
+onclick="window.location.href='register.html'">
+Start GK Test
+</button>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="card">
+<h2>5000+</h2>
+<p>Students</p>
+</div>
+
+<div class="card">
+<h2>120+</h2>
+<p>Tests Conducted</p>
+</div>
+
+<div class="card">
+<h2>95%</h2>
+<p>Success Rate</p>
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Why Choose Us?</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+<h3>Online Exams</h3>
+<p>Secure and professional online examinations.</p>
+</div>
+
+<div class="feature">
+<h3>Instant Results</h3>
+<p>Get your marks immediately after submission.</p>
+</div>
+
+<div class="feature">
+<h3>Performance Analysis</h3>
+<p>Track your strengths and weaknesses.</p>
+</div>
+
+<div class="feature">
+<h3>Modern Platform</h3>
+<p>Responsive design for desktop and mobile devices.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Exam Portal | All Rights Reserved
+</footer>
+
+</body>
+</html>

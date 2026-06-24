@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candidate Registration</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+}
+
+.container{
+background:white;
+padding:40px;
+width:450px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+}
+
+input,select{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#00c853;
+color:white;
+border:none;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#009624;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Candidate Registration</h1>
+
+<input type="text" id="name" placeholder="Enter Full Name">
+
+<input type="number" id="age" placeholder="Enter Age">
+
+<input type="email" id="email" placeholder="Enter Email">
+
+<select id="level">
+<option value="">Select Exam Level</option>
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+</select>
+
+<button onclick="startExam()">Start Exam</button>
+
+</div>
+
+<script>
+
+function startExam(){
+
+let name=document.getElementById("name").value;
+let age=document.getElementById("age").value;
+let email=document.getElementById("email").value;
+let level=document.getElementById("level").value;
+
+if(name=="" || age=="" || email=="" || level==""){
+alert("Please fill all fields");
+return;
+}
+
+localStorage.setItem("candidateName",name);
+localStorage.setItem("candidateAge",age);
+localStorage.setItem("candidateEmail",email);
+localStorage.setItem("candidateLevel",level);
+
+window.location.href="exam.html";
+
+}
+
+</script>
+
+</body>
+</html>
